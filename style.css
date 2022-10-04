@@ -6,21 +6,13 @@ body {
     padding: 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 50%;
-    height: 80px;
-    
-    margin: auto;
-}
-
 header a {
     height: 60px;
 }
+
 header img {
     height: 100%;
+    margin: auto;
 }
 
 ul {
@@ -121,13 +113,47 @@ blockquote {
 
 /* Conformisation */
 
-.navbar {
-    
+header {
+    width: 100%;
+    height: 80px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+header a {
+    margin: 0;
+    padding: 0;
+}
+header .liensHeader {
+    margin: 0;
+    padding: 0;
+}
+
+.navHeader {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.flexMenu {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+#accueil {
+    margin-right: 20px;
+}
 
 .col-sm-12 {
     padding: 0;
@@ -546,9 +572,8 @@ a:hover {
 }
 
 .navbar-brand {
-    
     height: auto;
-    padding: 3px 15px;
+    padding: 0 20px 0 20px;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
@@ -556,10 +581,8 @@ a:hover {
 }
 
 .navbar-brand img {
-    
-    
-    margin: 0 5px 0 0;
-    display: inline;
+    margin: 0 0px 0 0;
+    /*Supression display inline*/
 }
 
 .navbar-brand img[src$=svg] {
@@ -592,8 +615,8 @@ a:hover {
     background: transparent;
 }
 
-.navbar-toggle {
-    margin: 10px 10px 0 0;
+.navbar-toggle { /*Modif*/
+    margin: 0px 0px 0 0;
     border: 0px;
 }
 
@@ -1045,7 +1068,8 @@ article {
 }
 
 .tc-white {
-    color: #dec2b5!important;
+
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
@@ -1186,6 +1210,11 @@ article {
     .b-parallax {
         background-attachment: scroll;
     }
+
+    header {
+        justify-content: center;
+    }
+
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
@@ -1242,6 +1271,7 @@ article {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
+        margin-right: 0px;
     }
     .nav-invert .navbar-header {
         float: none;
